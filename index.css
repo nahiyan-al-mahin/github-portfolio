@@ -1,0 +1,61 @@
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+.Name {
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    color: cornsilk;
+}
+
+.options {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+.options a:hover {
+    color: red;
+}
+
+.mahin{
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.words h1 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.subtitle {
+    margin: 18px 0;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.myimage img {
+    width: 400px;
+    height: 400px;
+    object-fit:cover;
+    border-radius: 20%;
+}
