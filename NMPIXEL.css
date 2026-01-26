@@ -1,6 +1,9 @@
 body {
-    background-color: #ffffff;
+    background-image: url("img/NMPIXEL/NM1.png");
     color: #fff;
+    justify-content: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .navbar {
@@ -8,6 +11,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 25px 60px;
+    background-color: #e1dddd;
+    border: #000000 2px solid;
 }
 .Name {
     font-size: 45px;
@@ -50,6 +55,9 @@ body {
 
 .about_me {
     max-width: 600px;
+    background-color: #e1dddd;
+    border-radius: 10%;
+    padding: 30px 40px;
 }
 
 .about_me h1 {
@@ -72,4 +80,9 @@ body {
     height: 450px;
     object-fit:cover;
     border-radius: 20%;
+}
+
+.game-names{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
