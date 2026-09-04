@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahin Uddin | CSE Student &amp; Game Developer</title>
+<meta name="description" content="Portfolio of Mahin Uddin, CSE student at Southeast University building games in Unreal Engine 5 and full-stack web applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="wordmark">Mahin Uddin</a>
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="nav-menu" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="section-inner hero-inner">
+      <div class="photo-frame">
+        <img src="photo.jpg" alt="Mahin Uddin, arms crossed, standing in front of a hand-painted geometric mural" width="1400" height="1750">
+        <span class="photo-tape" aria-hidden="true"></span>
+      </div>
+      <div class="hero-copy">
+        <p class="hero-caption">Dhaka, Bangladesh</p>
+        <h1>Mahin Uddin</h1>
+        <p class="hero-role">CSE student building games and full‑stack web apps</p>
+        <p class="hero-text">
+          Third-year Computer Science &amp; Engineering student at Southeast University,
+          focused on game development and full-stack web applications. First-author
+          paper accepted at ICCETE 2026. Shipped work in Unreal Engine 5, PHP, and Python —
+          including a complete 3D first-person shooter and an AI-powered chat app.
+        </p>
+        <p class="hero-meta">
+          Southeast University, BSc CSE <span aria-hidden="true">·</span> 3rd year <span aria-hidden="true">·</span> CGPA 3.50
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-inner about-inner">
+      <h2>About</h2>
+      <p>
+        I'm a Computer Science &amp; Engineering student interested in the overlap between
+        games and software engineering. Most of what I build ships end to end:
+        I designed and shipped a complete 3D shooter solo in Unreal Engine 5, and separately
+        built and deployed a full-stack book management platform with live chat using PHP
+        and MySQL. My research looks at using game development itself as a way to teach
+        Data Structures &amp; Algorithms more effectively.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects-section">
+    <div class="section-inner">
+      <h2>Projects</h2>
+      <p class="section-sub">Filter by track, then open a card for the build details.</p>
+
+      <div class="projects-interactive">
+        <input type="radio" name="filter" id="f-all" class="filter-input" checked>
+        <input type="radio" name="filter" id="f-game" class="filter-input">
+        <input type="radio" name="filter" id="f-web" class="filter-input">
+        <input type="radio" name="filter" id="f-python" class="filter-input">
+
+        <div class="filter-bar" role="tablist" aria-label="Project filter">
+          <label for="f-all">All</label>
+          <label for="f-game">Game dev</label>
+          <label for="f-web">Web</label>
+          <label for="f-python">Python</label>
+        </div>
+
+        <div class="project-grid">
+
+          <details class="card" data-cat="game">
+            <summary>
+              <div class="card-title-row">
+                <h3>Antidote — 3D Zombie Shooter</h3>
+                <span class="card-date">Jul – Sep 2025</span>
+              </div>
+              <div class="card-tags">
+                <span class="tag">Unreal Engine 5</span>
+                <span class="tag">Blueprints</span>
+              </div>
+            </summary>
+            <div class="card-body">
+              <ul>
+                <li>Designed and shipped a complete first-person zombie shooter in Unreal Engine 5 using Blueprints.</li>
+                <li>Built custom enemy AI with patrol and attack states, player combat mechanics, and a health/damage system.</li>
+                <li>Sole developer — handled AI behavior trees, UI (health bar, ammo counter), and game state management.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="card" data-cat="web">
+            <summary>
+              <div class="card-title-row">
+                <h3>Book-Shelf Website</h3>
+                <span class="card-date">Mar – Apr 2026</span>
+              </div>
+              <div class="card-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+            </summary>
+            <div class="card-body">
+              <ul>
+                <li>Built a full-stack book management platform with user authentication, personal collections, and a real-time community chat, deployed live on InfinityFree.</li>
+                <li>Implemented secure session-based login, CRUD operations for book entries, and a live chat system in PHP and MySQL.</li>
+                <li>Designed a responsive front end in HTML and CSS for browsing books and joining the community chat.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="card" data-cat="python">
+            <summary>
+              <div class="card-title-row">
+                <h3>Gemini-Powered Chat Application</h3>
+                <span class="card-date">Apr 2026</span>
+              </div>
+              <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">Gemini API</span>
+              </div>
+            </summary>
+            <div class="card-body">
+              <ul>
+                <li>Built a browser-based AI chat application integrating Google's Gemini API for real-time LLM responses.</li>
+                <li>Built and deployed solo, as a Python/Streamlit interface, within days.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="card" data-cat="python">
+            <summary>
+              <div class="card-title-row">
+                <h3>Student Management System</h3>
+                <span class="card-date">Jan 2026</span>
+              </div>
+              <div class="card-tags">
+                <span class="tag">Python</span>
+              </div>
+            </summary>
+            <div class="card-body">
+              <ul>
+                <li>Built a console-based application for maintaining and organizing student records.</li>
+                <li>Implemented CRUD functionality — add, view, search, update, delete — through a menu-driven interface.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="card" data-cat="game">
+            <summary>
+              <div class="card-title-row">
+                <h3>Brick Ball — Retro Arcade Game</h3>
+                <span class="card-date">Jan 2026</span>
+              </div>
+              <div class="card-tags">
+                <span class="tag">Unreal Engine 5</span>
+                <span class="tag">Blueprints</span>
+              </div>
+            </summary>
+            <div class="card-body">
+              <ul>
+                <li>Developing a 3D retro brick-breaker in Unreal Engine 5 using Blueprints.</li>
+                <li>Implementing physics-based ball mechanics, dynamic brick destruction, and responsive paddle controls.</li>
+              </ul>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="section">
+    <div class="section-inner">
+      <h2>Research</h2>
+      <div class="research-card">
+        <div class="research-meta">
+          <span class="research-venue">ICCETE 2026 International Conference</span>
+          <span class="research-status">Accepted</span>
+        </div>
+        <h3 class="research-title">
+          The Transformative Role of Game Development: Advancing DSA Learning in Game Development
+        </h3>
+        <p>
+          First-author paper on using game development as a pedagogical tool for teaching
+          Data Structures &amp; Algorithms, showing measurable improvements in student
+          engagement and concept retention. Presented in Dhaka, Bangladesh.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="section-inner">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-when">Sep 2023 – Present</div>
+          <div class="timeline-what">
+            <h3>Southeast University</h3>
+            <p>Bachelor of Science in Computer Science and Engineering — Dhaka, Bangladesh</p>
+            <p class="timeline-detail">CGPA: 3.50 / 4.00</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-when">Graduated 2020</div>
+          <div class="timeline-what">
+            <h3>Govt. Science College</h3>
+            <p>Higher Secondary Certificate — Science — Dhaka, Bangladesh</p>
+            <p class="timeline-detail">GPA: 5.00 / 5.00</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="tag-cloud">
+            <span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span><span class="tag">PHP</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Web &amp; database</h3>
+          <div class="tag-cloud">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Game development</h3>
+          <div class="tag-cloud">
+            <span class="tag">Unreal Engine 5</span><span class="tag">Blueprints</span><span class="tag">Game AI</span><span class="tag">Level design</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>AI &amp; APIs</h3>
+          <div class="tag-cloud">
+            <span class="tag">Gemini API</span><span class="tag">Streamlit</span><span class="tag">Python AI/ML</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Developer tools</h3>
+          <div class="tag-cloud">
+            <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Certifications</h3>
+          <ul class="cert-list">
+            <li><span class="cert-name">Unreal Engine Game Development</span><span class="cert-source">MSB Academy · 2025</span></li>
+            <li><span class="cert-name">Python &amp; AI/ML Fundamentals</span><span class="cert-source">Phitron · 2026</span></li>
+            <li><span class="cert-name">Full-Stack Web Development</span><span class="cert-source">Ostad · 2026</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner">
+      <h2>Get in touch</h2>
+      <p class="section-sub">Open to internships, collaborations, and game jams.</p>
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:mun.nahiyan@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">mun.nahiyan@gmail.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/mahin-uddin-al-nahiyan" target="_blank" rel="noopener">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">/in/mahin-uddin-al-nahiyan</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/nahiyan-al-mahin" target="_blank" rel="noopener">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">/nahiyan-al-mahin</span>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+8801774619224">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+880 177 4619224</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <span>Mahin Uddin — Dhaka, Bangladesh</span>
+    <span>Built with HTML &amp; CSS</span>
+  </div>
+</footer>
+
+</body>
+</html>
